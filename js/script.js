@@ -1,17 +1,18 @@
-
+var one = document.getElementById("one");
 var show = document.getElementById("myDIVone");
 var divTwo = document.getElementById("divTwo");
 var divthree =document.getElementById("divthree");
 var divfour =  document.getElementById("divfour");
 function showFunction() {
-  
   if (show.style.display === "none") {
+    one.style.display = "none";
     show.style.display = "block";
     divTwo.style.display="none";
     divthree.style.display="none";
     divfour.style.display="none";
   } else {
-    show.style.display = "none";
+    one.style.display ="none";
+    show.style.display="block";
     divTwo.style.display="none";
     divthree.style.display="none";
     divfour.style.display="none";
@@ -21,12 +22,14 @@ function showFunction() {
 function showdivtwo(){
   
   if (divTwo.style.display === "none") {
-    show.style.display = "block";
+    one.style.display="none"
+    show.style.display = "none";
     divTwo.style.display="block";
     divthree.style.display="none";
     divfour.style.display="none";
   } else {
-    show.style.display = "block";
+    one.style.display="none"
+    show.style.display = "none";
     divTwo.style.display="block";
     divthree.style.display="none";
     divfour.style.display="none";
@@ -103,14 +106,16 @@ function myFunction() {
 
 
   if (divthree.style.display === "none") {
-    show.style.display = "block";
-    divTwo.style.display="block";
+    one.style.display="none"
+    show.style.display = "none";
+    divTwo.style.display="none";
     divthree.style.display="block";
     divfour.style.display="none";
   } else {
-    show.style.display = "block";
-    divTwo.style.display="block";
-    divthree.style.display="none";
+    one.style.display="none"
+    show.style.display = "none";
+    divTwo.style.display="none";
+    divthree.style.display="block";
     divfour.style.display="none";
 
   }
@@ -119,12 +124,17 @@ function myFunction() {
 function showdivfour(){
   
   if (divfour.style.display === "none") {
-    show.style.display = "block";
-    divTwo.style.display="block";
-    divthree.style.display="block";
+    one.style.display="none"
+    show.style.display = "none";
+    divTwo.style.display="none";
+    divthree.style.display="none";
     divfour.style.display="block";
   } else {
-    
+    one.style.display="none"
+    show.style.display = "none";
+    divTwo.style.display="none";
+    divthree.style.display="none";
+    divfour.style.display="block";
     
 
   }
