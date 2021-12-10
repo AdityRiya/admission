@@ -1,4 +1,4 @@
-#myDIVone{
+/*  #myDIVone{
     display: none;
 }
 #divTwo{
@@ -6,10 +6,10 @@
 }
 #divthree{
     display: none;
-}
+} */
 #divfour{
     display: none;
-}
+} 
 
 .heading .photo{
     background: rgb(233, 233, 233);
@@ -81,4 +81,10 @@
 }
 .check{
     border: 1px solid black;
+}
+
+.box{
+        
+    display: none;
+    
 }
