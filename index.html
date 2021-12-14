@@ -47,16 +47,16 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#home">Student's Information</a>
+          <a class="nav-link active" id="one" data-toggle="tab" href="#home">Student's Information</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#menu1">Guardian's Information</a>
+          <a class="nav-link " id="two" data-toggle="tab" href="#menu1">Guardian's Information</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#menu2">Education Information</a>
+          <a class="nav-link" id="three" data-toggle="tab" href="#menu2">Education Information</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#menu3">Target Choice Information</a>
+          <a class="nav-link" id="four" data-toggle="tab" href="#menu3">Target Choice Information</a>
         </li>
       </ul>
     
@@ -77,38 +77,42 @@
                   <div class="form-group row my-3">
                       <label for="inputID" class="col-sm-4 col-form-label"><big>Application ID :</big></label>
                       <div class="col-sm-7">
-                        <input type="text" class="form-control" id="inputID" placeholder="Auto Generated">
+                        <input type="text" class="form-control " id="inputID" placeholder="Auto Generated">
                       </div>
                     </div>
 
                     <div class="form-group row my-3">
                       <label for="inputname" class="col-sm-4 col-form-label"><big>Applicants Name :</big></label>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" id="inputname" required placeholder="Name">
+                        <input type="text" class="form-control input-edu" id="inputname" required placeholder="Name">
                       </div>
                     </div>
                     <div class="form-group row my-3">
                       <label for="inputnumber" class="col-sm-4 col-form-label"><big>Phone Number :</big></label>
                       <div class="col-sm-8">
-                        <input type="tel" class="form-control" id="inputnumber" required placeholder="Number">
+                        <input type="tel" class="form-control input-edu" id="inputnumber" required placeholder="Number">
                       </div>
                     </div>
                     <div class="form-group row my-3">
                       <label for="inputID" class="col-sm-4 col-form-label"><big>Date of Birth :</big></label>
                       <div class="col-sm-8">
-                        <input type="date" class="form-control" id="inputID" required placeholder="date">
+                        <input type="date" class="form-control input-edu" id="inputID" required placeholder="date">
                       </div>
                     </div>
                     <div class="form-group row my-3">
                       <label for="inputID" class="col-sm-4 col-form-label"><big>Email :</big></label>
                       <div class="col-sm-8">
-                        <input type="email" class="form-control" id="inputID" required placeholder="Email">
+                        <input type="email" class="form-control input-edu" id="inputID" required placeholder="Email">
                       </div>
                     </div>
                     
+                    
                   
                   </div>
+          <div class="col-sm-12 text-center">            
+            <a class="btn btn-primary btnNext" >Next</a>
 
+          </div>
                  
                 
           </div>
@@ -129,32 +133,32 @@
                 <div class="form-group row my-3">
                     <label for="inputID" class="col-sm-4 col-form-label"><big>Father's Name</big></label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="inputID" required placeholder="Name">
+                      <input type="text" class="form-control input-g" id="inputID" required placeholder="Name">
                     </div>
                   </div>
 
                   <div class="form-group row my-3">
                     <label for="inputname" class="col-sm-4 col-form-label"><big>Mother's Name :</big></label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="inputname" required placeholder="Name">
+                      <input type="text" class="form-control input-g" id="inputname" required placeholder="Name">
                     </div>
                   </div>
                   <div class="form-group row my-3">
                     <label for="inputnumber" class="col-sm-4 col-form-label"><big>Guardian Number :</big></label>
                     <div class="col-sm-8">
-                      <input type="tel" class="form-control" id="inputnumber" required placeholder="Number">
+                      <input type="tel" class="form-control input-g" id="inputnumber" required placeholder="Number">
                     </div>
                   </div>
                   <div class="form-group row my-3">
                     <label for="inputID" class="col-sm-4 col-form-label"><big>Permanent Address :</big></label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="inputID" required placeholder="Address">
+                      <input type="text" class="form-control input-g"  id="inputID" required placeholder="Address">
                     </div>
                   </div>
                   <div class="form-group row my-3">
                     <label for="inputID" class="col-sm-4 col-form-label"><big>Present Address :</big></label>
                     <div class="col-sm-8">
-                      <input type="text" class="form-control" id="inputID" required placeholder="Address">
+                      <input type="text" class="form-control input-g" id="inputID" required placeholder="Address">
                     </div>
                   </div>
 
@@ -163,6 +167,12 @@
                 
                 
                 </div>
+                <div class="col-sm-12 text-center">
+                  <a class="btn btn-primary btnNext" >Next</a>
+                  <a class="btn btn-primary btnPrevious" >Previous</a>
+      
+                </div>
+                       
              
               
         </div>
@@ -178,91 +188,95 @@
           <h6><b class="student">Education Information</b></h6>
       </div>
       <div class="row">
+        <div class="col-sm-12">
+          <fieldset>
+            <div class=" col-lg-12 col-sm-12 my-4">
+              <div class="ssc">
+                <p class="ssc-heading">S <br>
+                S <br>
+              C</p>
+                  <div class="form-row ">
+                      <div class="form-group p-2 col-md-6">
+                        <div class="form-group row my-1">
+                            <label for="inputID" class="col-sm-4 col-form-label"><big>School Name :</big></label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="inputID" required placeholder="School Name">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="form-group p-2 col-md-6">
+                        <div class="form-group row my-1">
+                            <label for="inputID" class="col-sm-4 col-form-label"><big>Group :</big></label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Science</option>
+                                    <option>Commerce</option>
+                                    <option>Arts</option>
+                                  </select>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group p-2 col-md-6">
+                          <div class="form-group row my-1">
+                              <label for="inputGPA" class="col-sm-4 col-form-label"><big>GPA :</big></label>
+                              <div class="col-sm-8">
+                                <input type="" class="form-control" id="inputGPA" required placeholder="GPA">
+                                <small class="form-text text-muted">
+                                  Your GPA must be between 2.75 to 5.00.
+                                </small>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group p-2 col-md-6">
+                          <div class="form-group row my-1">
+                              <label for="inputID" class="col-sm-4 col-form-label"><big>Passing Year :</big></label>
+                              <div class="col-sm-8">
+                                <input type="datetime" class="form-control" id="inputPY" required placeholder="Passing Year">
+                                <small class="form-text text-muted">
+                                  Your passing year must be between 2016 to 2019.
+                                </small>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group p-2 col-md-6">
+                          <div class="form-group row my-1">
+                              <label for="inputID" class="col-sm-4 col-form-label"><big>Board Roll :</big></label>
+                              <div class="col-sm-8">
+                                <input type="Number" class="form-control" id="inputID" required placeholder="Roll">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group p-2 col-md-6">
+                          <div class="form-group row my-1">
+                              <label for="inputID" class="col-sm-4 col-form-label"><big>Board Name :</big></label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>ctg</option>
+                                    <option>Dhaka</option>
+                                  </select>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
         <div class="col-sm-12 p-4">
           <H4>Which Education Information you want to fillup?
           </H4>
-          <label class="mx-3"><input type="radio"  name="colorRadio" value="SSC">SSC</label>
+          
           <label class="mx-3"><input type="radio" name="colorRadio" value="HSC"> HSC</label>
           <label class="mx-3"><input type="radio" name="colorRadio" value="DIPLOMA"> DIPLOMA</label>
       </div>
-      <div class="SSC box"><fieldset>
-        <div class=" col-lg-12 col-sm-12 my-4">
-          <div class="ssc">
-            <p class="ssc-heading">S <br>
-            S <br>
-          C</p>
-              <div class="form-row ">
-                  <div class="form-group p-2 col-md-6">
-                    <div class="form-group row my-1">
-                        <label for="inputID" class="col-sm-4 col-form-label"><big>School Name :</big></label>
-                        <div class="col-sm-8">
-                          <input type="text" class="form-control" id="inputID" required placeholder="School Name">
-                        </div>
-                      </div>
-                  </div>
-                  <div class="form-group p-2 col-md-6">
-                    <div class="form-group row my-1">
-                        <label for="inputID" class="col-sm-4 col-form-label"><big>Group :</big></label>
-                        <div class="col-sm-8">
-                            <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Science</option>
-                                <option>Commerce</option>
-                                <option>Arts</option>
-                              </select>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group p-2 col-md-6">
-                      <div class="form-group row my-1">
-                          <label for="inputGPA" class="col-sm-4 col-form-label"><big>GPA :</big></label>
-                          <div class="col-sm-8">
-                            <input type="" class="form-control" id="inputGPA" required placeholder="GPA">
-                            <small class="form-text text-muted">
-                              Your GPA must be between 2.75 to 5.00.
-                            </small>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="form-group p-2 col-md-6">
-                      <div class="form-group row my-1">
-                          <label for="inputID" class="col-sm-4 col-form-label"><big>Passing Year :</big></label>
-                          <div class="col-sm-8">
-                            <input type="datetime" class="form-control" id="inputPY" required placeholder="Passing Year">
-                            <small class="form-text text-muted">
-                              Your passing year must be between 2016 to 2019.
-                            </small>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group p-2 col-md-6">
-                      <div class="form-group row my-1">
-                          <label for="inputID" class="col-sm-4 col-form-label"><big>Board Roll :</big></label>
-                          <div class="col-sm-8">
-                            <input type="Number" class="form-control" id="inputID" required placeholder="Roll">
-                          </div>
-                        </div>
-                    </div>
-                    <div class="form-group p-2 col-md-6">
-                      <div class="form-group row my-1">
-                          <label for="inputID" class="col-sm-4 col-form-label"><big>Board Name :</big></label>
-                          <div class="col-sm-8">
-                            <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>ctg</option>
-                                <option>Dhaka</option>
-                              </select>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-          </div>
-        </div>
-      </fieldset></div>
+      <div class="col-sm-12">
+        
       <div class="HSC box"> <fieldset>
         <div class=" col-lg-12 col-sm-12 my-4">
           <div class="hsc">
@@ -422,6 +436,14 @@
           </div>
         </div>
     </fieldset></div>
+    <div class="col-sm-12 text-center">
+      <a class="btn btn-primary btnNext" >Next</a>
+      <a class="btn btn-primary btnPrevious" >Previous</a>
+
+    </div>
+           
+      </div>
+      
    
       
      
@@ -481,7 +503,8 @@
           </fieldset>
           
           <div class="form-group row">
-            <div class="col-sm-10 text-center">
+            <div class="col-sm-12 text-center">
+              <button type="button" class="btn btn-outline-dark m-4">Home</button>
               <button type="button" class="btn btn-outline-dark m-4">Print Preview</button>
               <button type="button" class="btn btn-outline-dark m-4">Edit</button>
               <button type="submit" onclick="showdivfour()" class="btn btn-outline-dark m-4">Submit</button>
@@ -490,7 +513,10 @@
           </div>
         
       </div>
-      
+      <div class="col-sm-12">
+        
+        <a class="btn btn-primary btnPrevious" >Previous</a>
+      </div>
   </div>
 </div>
           </div>

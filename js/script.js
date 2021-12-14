@@ -36,3 +36,43 @@ $(document).ready(function(){
       $(targetBox).show();
   });
 });
+
+
+// let inputedu = document.querySelector(".input-edu");
+// let buttonedu = document.querySelector(".button-edu");
+
+// buttonedu.disabled = true; //setting button state to disabled
+
+// inputedu.addEventListener("change", stateHandle);
+
+// function stateHandle() {
+//     if (document.querySelector(".input-edu").value === "") {
+//         buttonedu.disabled = true; //button remains disabled
+//     } else {
+//         buttonedu.disabled = false; //button is enabled
+//     }
+// }
+
+// let inputg = document.querySelector(".input-g");
+// let buttonedu = document.querySelector(".button-edu");
+
+// buttonedu.disabled = true; //setting button state to disabled
+
+// inputedu.addEventListener("change", stateHandle);
+
+// function stateHandle() {
+//     if (document.querySelector(".input-edu").value === "") {
+//         buttonedu.disabled = true; //button remains disabled
+//     } else {
+//         buttonedu.disabled = false; //button is enabled
+//     }
+// }
+
+
+$('.btnNext').click(function(){
+  $('.nav-tabs > .active').next('li').find('a').trigger('click');
+});
+
+  $('.btnPrevious').click(function(){
+  $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+});
